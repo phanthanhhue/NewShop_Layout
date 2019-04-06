@@ -1,0 +1,358 @@
+/* GLOBAL CSS */
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.section-title {
+    color: #1565c0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 1.8rem;
+    text-align: center;
+}
+
+.product__title {
+    color: #1565c0;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.product__size {
+    font-weight: 600;
+    padding-bottom: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.product__price {
+    color:  rgba(0, 0, 0, 0.685);
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.btn-orange {
+    color: white;
+    border: 3px solid #f1a228;
+    background-color: #f1a228;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.btn-orange:hover {
+    background-color: transparent;
+    color: #1565c0;
+}
+
+/* END GLOBAL CSS */
+/* HEADER CSS */
+
+.header {
+    background-color: #1565c0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 5%;
+    color: white;
+}
+
+.header p {
+    cursor: pointer;
+}
+.header ul li {
+    display: inline;
+}
+
+.header ul li a {
+    color: white;
+    text-decoration: none;
+    padding-left: 1.5rem;
+}
+
+.header ul li a:hover {
+    cursor: pointer;
+}
+
+/* END HEADER CSS */
+
+/* NAVIGATION CSS */
+.top-nav {
+    background-color: #0d59af;
+    padding: 0.5rem 5%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    grid-column: 2/span 4;
+    line-height: 1.5rem;
+}
+
+.main-nav ul li {
+    display: inline;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.top-nav .cart {
+    color: white;
+    font-size: 0.7rem;
+    text-align: right;
+}
+
+.top-nav .cart:hover{
+    cursor: pointer;
+}
+
+.top-nav i {
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+/* END NAVIGATION CSS */
+
+/* CAROUSREL CSS */
+.carousel {
+    background-image: url(../images/b1.jpg);
+    height: 30rem;
+}
+/* END CAROUSEL CSS  */
+
+/* INTRODUCTION CSS */
+.intro {
+    padding: 2rem 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.intro__left {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+
+.intro__right-top {
+    grid-column: 3/span 2;
+}
+
+.intro img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* END INTRODUCTION CSS */
+
+/* NEW PRODUCTS CSS */
+.new-products, .new-arrivals {
+    padding: 1.5rem 10%;
+    background-color: #f9f8f8;
+}
+
+.product__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.product__item {
+    border: 3px solid rgba(0, 0, 0, 0.151);
+    text-align: center;
+}
+
+.product__item img {
+    display: block;
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+.add-to-cart {
+    color: #1565c0;
+    background-color: transparent;
+}
+
+.add-to-cart:hover {
+    color: white;
+    background-color: #f1a228;
+}
+
+.product__deal {
+    color: black;
+    padding-left: 0.5rem;
+}
+
+.product__item .product__price del {
+    color: rgba(0, 0, 0, 0.685);
+}
+
+/* END NEW PRODUCTS CSS */
+
+/* QUICK VIEW CSS */
+.quick-view {
+    background-image: url(../images/ban1.jpg);
+    height: 24rem;
+    background-size: cover;
+    text-align: center;
+}
+
+.quick-view .btn-orange {
+    margin: 1rem 0.5rem;
+    font-weight: 600;
+}
+
+.quick-view h2 {
+    padding-top: 6rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.quick-view h1 {
+    font-size: 3rem;
+    margin: 1rem;
+    color: white;
+}
+
+/* END QUICK VIEW CSS */
+
+
+/* NEW ARRIVALS */
+.new-arrivals {
+    background-color: white;
+    margin-bottom: 2rem;
+}
+/* END NEW ARRIVALS */
+
+/* LATEST FASHION CSS */
+.latest-fashion {
+    background-color: #f9f8f8;
+    padding: 1.5rem 10%;
+}
+
+.latest__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+.latest__item {
+    position: relative;  
+    color: white;  
+    text-align: center;
+    overflow: hidden;
+}
+
+.latest__item img {
+    display: block;
+    width: 100%;
+    z-index: 1;
+}
+
+.latest__item p {
+    position: absolute;
+    background-color: rgba(11, 126, 250, 0.7);
+    width: 100%;
+    padding: 0.7rem 0;
+    bottom:  0;
+    font-weight: 600;
+    transform: translateY(100%);
+}
+
+.latest__item span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(11, 126, 250, 0.7);
+    border: none;
+    border-radius: 50%;
+    padding: 0.55rem 0.3rem;
+    font-size: 0.5rem;
+    font-weight: 800;
+}
+
+.latest__item img:hover {
+    cursor: pointer;
+
+}
+
+.latest__item img:hover + .latest__category {
+    transform: translateY(0);
+}
+
+/* END LATEST FASHION CSS */
+
+/* CONTACT CSS */
+.contact {
+    background-color: #1565c0;
+    color: white;
+    display: grid;
+    grid-template-columns: 35% 20% 20% 25%;
+    grid-gap: 1rem;
+    padding: 1.5rem 10%;
+}
+
+.contact__item {
+    font-size: 0.8rem;
+}
+
+.contact__item .item__title {
+    padding-bottom: 1rem;
+}
+
+.contact__item ul li {
+    padding-bottom: 0.7rem;
+    list-style: none;
+}
+
+.contact__item ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.contact__item ul li a:hover {
+    color: #f1a228;
+}
+
+.contact__item span {
+    display: block;
+    padding-bottom: 0.7rem;
+}
+
+.contact__item span i {
+    padding-right: 0.5rem;
+}
+/* END CONTACT CSS */
+
+/* FOOTER CSS */
+.footer {
+    background-color: #000000;
+    color: white;
+    font-size: 0.8rem;
+    padding: 1rem 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer img {
+    display: block;
+}
+
+/* END FOOTER CSS */
